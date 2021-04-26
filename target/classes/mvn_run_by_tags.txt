@@ -1,0 +1,8 @@
+Maven terminal tags run code: mvn clean test -Dcucumber.filter.tags="@Smoke"
+
+
+We can write tag name as @Smoke, @Regression, @qa-ready, @US-1001, @Epic-900
+
+
+// To exclude tags in maven
+Maven terminal tags run code: mvn test -DCucumber.options="--tags '@Login and not @skip_scenario'"

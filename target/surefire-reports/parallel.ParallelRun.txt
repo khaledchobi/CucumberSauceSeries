@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: parallel.ParallelRun
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 30.328 s <<< FAILURE! - in parallel.ParallelRun
+runScenario(parallel.ParallelRun)  Time elapsed: 1.173 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 0.108 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 0.137 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 0.27 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 0.431 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 1.232 s  <<< FAILURE!
+java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+
+runScenario(parallel.ParallelRun)  Time elapsed: 2.456 s  <<< FAILURE!
+java.lang.AssertionError
+

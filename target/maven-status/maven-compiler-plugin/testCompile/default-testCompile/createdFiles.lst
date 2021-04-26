@@ -1,0 +1,6 @@
+testrunners/MyTestRunner.class
+parallel/AccountsPageSteps.class
+parallel/LoginPageSteps.class
+parallel/ApplicationHooks.class
+stepdefinitions/LoginSteps.class
+parallel/ContactUsSteps.class

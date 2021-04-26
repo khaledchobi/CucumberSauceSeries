@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="parallel.ParallelRun" time="30.328" tests="13" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/test-classes:/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/classes:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/khaledhasan/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/khaledhasan/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/khaledhasan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/khaledhasan/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/khaledhasan/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/khaledhasan/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/khaledhasan/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/khaledhasan/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/khaledhasan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/khaledhasan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/khaledhasan/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/khaledhasan/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/khaledhasan/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/khaledhasan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/khaledhasan/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/khaledhasan/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/khaledhasan/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.6.0/extentreports-cucumber6-adapter-2.6.0.jar:/Users/khaledhasan/.m2/repository/com/aventstack/extentreports/5.0.5/extentreports-5.0.5.jar:/Users/khaledhasan/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/khaledhasan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/khaledhasan/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/khaledhasan/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/extent-pdf-report/1.5.0/extent-pdf-report-1.5.0.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/cucumber-pdf-report/1.7.0/cucumber-pdf-report-1.7.0.jar:/Users/khaledhasan/.m2/repository/org/apache/pdfbox/pdfbox/2.0.21/pdfbox-2.0.21.jar:/Users/khaledhasan/.m2/repository/org/apache/pdfbox/fontbox/2.0.21/fontbox-2.0.21.jar:/Users/khaledhasan/.m2/repository/org/knowm/xchart/xchart/3.6.5/xchart-3.6.5.jar:/Users/khaledhasan/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/khaledhasan/.m2/repository/de/rototor/pdfbox/graphics2d/0.27/graphics2d-0.27.jar:/Users/khaledhasan/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/khaledhasan/.m2/repository/com/github/vandeseer/easytable/0.7.1/easytable-0.7.1.jar:/Users/khaledhasan/.m2/repository/com/github/ralfstuckert/pdfbox-layout/pdfbox2-layout/1.0.0/pdfbox2-layout-1.0.0.jar:/Users/khaledhasan/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/khaledhasan/.m2/repository/com/aventstack/klov-reporter/5.0.5/klov-reporter-5.0.5.jar:/Users/khaledhasan/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/khaledhasan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/khaledhasan/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/khaledhasan/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/khaledhasan/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/khaledhasan/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/khaledhasan/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/khaledhasan/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/khaledhasan/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/khaledhasan/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/surefire/surefirebooter10785848372329884276.jar /Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/surefire 2021-01-30T14-33-44_467-jvmRun1 surefire5320767809008920524tmp surefire_018029188566950153129tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/test-classes:/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/classes:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/khaledhasan/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/khaledhasan/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/khaledhasan/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/khaledhasan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/khaledhasan/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/khaledhasan/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/khaledhasan/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/khaledhasan/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/khaledhasan/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/khaledhasan/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/khaledhasan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/khaledhasan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/khaledhasan/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/khaledhasan/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/khaledhasan/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/khaledhasan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/khaledhasan/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/khaledhasan/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/khaledhasan/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/khaledhasan/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.6.0/extentreports-cucumber6-adapter-2.6.0.jar:/Users/khaledhasan/.m2/repository/com/aventstack/extentreports/5.0.5/extentreports-5.0.5.jar:/Users/khaledhasan/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/khaledhasan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/khaledhasan/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/khaledhasan/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/extent-pdf-report/1.5.0/extent-pdf-report-1.5.0.jar:/Users/khaledhasan/.m2/repository/tech/grasshopper/cucumber-pdf-report/1.7.0/cucumber-pdf-report-1.7.0.jar:/Users/khaledhasan/.m2/repository/org/apache/pdfbox/pdfbox/2.0.21/pdfbox-2.0.21.jar:/Users/khaledhasan/.m2/repository/org/apache/pdfbox/fontbox/2.0.21/fontbox-2.0.21.jar:/Users/khaledhasan/.m2/repository/org/knowm/xchart/xchart/3.6.5/xchart-3.6.5.jar:/Users/khaledhasan/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/khaledhasan/.m2/repository/de/rototor/pdfbox/graphics2d/0.27/graphics2d-0.27.jar:/Users/khaledhasan/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/khaledhasan/.m2/repository/com/github/vandeseer/easytable/0.7.1/easytable-0.7.1.jar:/Users/khaledhasan/.m2/repository/com/github/ralfstuckert/pdfbox-layout/pdfbox2-layout/1.0.0/pdfbox2-layout-1.0.0.jar:/Users/khaledhasan/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/khaledhasan/.m2/repository/com/aventstack/klov-reporter/5.0.5/klov-reporter-5.0.5.jar:/Users/khaledhasan/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/khaledhasan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/khaledhasan/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/khaledhasan/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/khaledhasan/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/khaledhasan/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/khaledhasan/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/khaledhasan/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/khaledhasan/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/khaledhasan/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/khaledhasan/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/khaledhasan/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/khaledhasan/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/khaledhasan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/target/surefire/surefirebooter10785848372329884276.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="user.name" value="khaledhasan"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/khaledhasan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/4t/nz_06zzd59v6hxxlprwzjdz40000gn/T/"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="user.dir" value="/Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/khaledhasan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="8.897"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.185"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="1.173">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+    <system-out><![CDATA[  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+
+@accounts
+Scenario: Accounts page title                                         # src/test/resources/parallel/acc.feature:9
+  When user fills the form from given sheetname "contactus" and rownumber 3                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+	at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+	at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+	at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 3(file:///Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+browser value is: chrome
+  Given user navigates to contact us page                                                   # parallel.ContactUsSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 1                 # parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+      java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+	at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+	at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+	at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+	at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+	at ✽.user fills the form from given sheetname "contactus" and rownumber 1(file:///Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/src/test/resources/parallel/ContactUs.feature:5)
+
+  And user clicks on send button                                                            # parallel.ContactUsSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsSteps.it_shows_a_successful_message(java.lang.String)
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 422727 bytes]
+
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 422727 bytes]
+
+
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 422716 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 15000
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.108">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+    <system-out><![CDATA[
+@accounts
+Scenario: Accounts section count                  # src/test/resources/parallel/acc.feature:15
+browser value is: chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 14335
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.137">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.27">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+    <system-out><![CDATA[
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 422716 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="0.431">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+    <system-out><![CDATA[
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 423481 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="1.232">
+    <failure message="/Users/naveenautomationlabs/Desktop/automation.xlsx" type="java.io.FileNotFoundException">java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+</failure>
+    <system-out><![CDATA[
+    Embedding Contact_Us_scenario_with_different_set_of_data [image/png 422727 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Jan 30, 2021 2:33:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 30, 2021 2:33:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="1.693"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="2.456">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[MY CREDIT SLIPS
+MY ADDRESSES
+MY PERSONAL INFORMATION
+MY WISHLISTS
+Home
+Actual accounts section list: [ORDER HISTORY AND DETAILS, MY CREDIT SLIPS, MY ADDRESSES, MY PERSONAL INFORMATION, MY WISHLISTS, Home]
+  Then user gets accounts section                 # parallel.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)
+  And accounts section count should be 6          # parallel.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.AccountsPageSteps.accounts_section_count_should_be(AccountsPageSteps.java:55)
+	at ✽.accounts section count should be 6(file:///Users/khaledhasan/Desktop/Java_Github/Frame_Work/CucumberPOMSeries/src/test/resources/parallel/AccountsPage.feature:24)
+
+
+    Embedding Accounts_section_count [image/png 457350 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="5.475"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="5.662"/>
+  <testcase name="runScenario" classname="parallel.ParallelRun" time="5.778"/>
+</testsuite>
